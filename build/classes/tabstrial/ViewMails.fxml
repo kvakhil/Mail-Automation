@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="623.0" prefWidth="1262.0" style="-fx-background-color: #e3e7ed;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tabstrial.ViewMailsController">
+<children>
+      <TableView fx:id="mailTable" layoutX="16.0" layoutY="14.0" prefHeight="344.0" prefWidth="1199.0">
+        <columns>
+          <TableColumn fx:id="nameID" prefWidth="136.00006103515625" text="Name" />
+          <TableColumn fx:id="desID" prefWidth="137.0" text="Designation" />
+            <TableColumn fx:id="insID" prefWidth="118.0" text="Institute" />
+            <TableColumn fx:id="mailID" prefWidth="158.0" text="Email" />
+            <TableColumn fx:id="subID" prefWidth="169.0" text="Subject" />
+            <TableColumn fx:id="toeID" prefWidth="145.0" text="Type Of Examination" />
+            <TableColumn fx:id="yearID" prefWidth="69.0" text="Year" />
+            <TableColumn fx:id="semID" prefWidth="73.0" text="Semester" />
+            <TableColumn fx:id="tsID" prefWidth="193.0" text="Time Stamp" />
+        </columns>
+      </TableView>
+      <Pane layoutX="-7.0" layoutY="367.0" prefHeight="256.0" prefWidth="1271.0" style="-fx-background-color: #6699ff;">
+         <children>
+            <TextField fx:id="filterName" layoutX="315.0" layoutY="112.0" prefHeight="32.0" prefWidth="241.0" promptText="enter name" style="-fx-background-radius: 10;" />
+            <TextField fx:id="filterSubject" layoutX="315.0" layoutY="181.0" prefHeight="32.0" prefWidth="241.0" promptText="enter subject" style="-fx-background-radius: 10;" />
+            <TextField fx:id="filterTimeStamp" layoutX="806.0" layoutY="113.0" prefHeight="32.0" prefWidth="241.0" promptText="enter TimeStamp" style="-fx-background-radius: 10;" />
+            <Label layoutX="14.0" layoutY="7.0" opacity="0.84" prefHeight="23.0" prefWidth="173.0" text="View Mails" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="176.0" layoutY="117.0" prefHeight="23.0" prefWidth="173.0" text="Name" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI" size="18.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="176.0" layoutY="186.0" prefHeight="23.0" prefWidth="173.0" text="Subject" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI" size="18.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="602.0" layoutY="117.0" prefHeight="23.0" prefWidth="173.0" text="Time Stamp" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI" size="18.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="590.0" layoutY="42.0" prefHeight="23.0" prefWidth="173.0" text="Search Filter" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI" size="18.0" />
+               </font>
+            </Label>
+            <Line endX="595.0" endY="7.0" fill="WHITE" layoutX="440.0" layoutY="72.0" opacity="0.5" startX="-127.0" startY="7.0" stroke="#fff8f8" />
+            <TextField fx:id="filterExamination" layoutX="806.0" layoutY="181.0" prefHeight="32.0" prefWidth="241.0" promptText="enter Examination Type" style="-fx-background-radius: 10;" />
+            <Label alignment="CENTER" layoutX="614.0" layoutY="186.0" prefHeight="23.0" prefWidth="173.0" text="Examination Type" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

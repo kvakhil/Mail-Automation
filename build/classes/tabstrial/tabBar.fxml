@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane fx:id="mainpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="718.0" prefWidth="1262.0" stylesheets="@top_ui.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tabstrial.TabBarController">
+   <children>
+      <Pane prefHeight="82.0" prefWidth="1196.0" style="-fx-background-color: #e3e7ed;">
+         <children>
+            <Label fx:id="sendbtn" minHeight="16.0" minWidth="69.0" onMouseClicked="#sceneMails" prefHeight="82.0" prefWidth="239.0" styleClass="label1">
+               <padding>
+                  <Insets left="100.0" />
+               </padding>
+               <graphic>
+                  <ImageView fitHeight="54.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons8-new-file-512.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+            <Label fx:id="labBtn" layoutX="239.0" minHeight="16.0" minWidth="69.0" onMouseClicked="#sceneLabMails" prefHeight="82.0" prefWidth="239.0" styleClass="label1">
+               <padding>
+                  <Insets left="100.0" />
+               </padding>
+               <graphic>
+                  <ImageView fitHeight="55.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons8-test-tube-96.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+            <Label fx:id="viewBtn" layoutX="957.0" minHeight="16.0" minWidth="69.0" onMouseClicked="#sceneView" prefHeight="82.0" prefWidth="239.0" styleClass="label1">
+               <padding>
+                  <Insets left="100.0" />
+               </padding>
+               <graphic>
+                  <ImageView fitHeight="51.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons8-mailbox-opened-flag-up-96.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+            <Label fx:id="regBtn" layoutX="718.0" minHeight="16.0" minWidth="69.0" onMouseClicked="#sceneRegulations" prefHeight="82.0" prefWidth="239.0" styleClass="label1">
+               <padding>
+                  <Insets left="100.0" />
+               </padding>
+               <graphic>
+                  <ImageView fitHeight="51.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons8-document-480.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+            <Label fx:id="dbBtn" layoutX="479.0" minHeight="16.0" minWidth="69.0" onMouseClicked="#sceneDatabase" prefHeight="82.0" prefWidth="239.0" styleClass="label1">
+               <padding>
+                  <Insets left="100.0" />
+               </padding>
+               <graphic>
+                  <ImageView fitHeight="58.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true" styleClass="label1">
+                     <image>
+                        <Image url="@icons8-server-clocks-and-database-200.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="1191.0" layoutY="-1.0" prefHeight="84.0" prefWidth="72.0" style="-fx-background-color: #e3e7ed;">
+         <children>
+            <Label fx:id="closeBtn" layoutX="33.0" minHeight="16.0" minWidth="16.0" onMouseClicked="#sceneClose" prefHeight="34.0" prefWidth="38.0" styleClass="label1">
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons8-delete-96.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="7.0" top="4.0" />
+               </padding>
+            </Label>
+            <Label fx:id="closeBtn1" layoutX="-8.0" layoutY="-4.0" minHeight="16.0" minWidth="16.0" onMouseClicked="#sceneMinimize" prefHeight="43.0" prefWidth="45.0" styleClass="label1">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons8-advertisement-page-48.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <opaqueInsets>
+                  <Insets left="2.0" />
+               </opaqueInsets>
+               <padding>
+                  <Insets left="9.0" top="5.0" />
+               </padding>
+            </Label>
+            <Label layoutY="40.0" minHeight="16.0" minWidth="16.0" onMouseClicked="#sceneLogin" prefHeight="43.0" prefWidth="72.0" styleClass="label1">
+               <opaqueInsets>
+                  <Insets left="2.0" />
+               </opaqueInsets>
+               <padding>
+                  <Insets left="23.0" />
+               </padding>
+               <graphic>
+                  <ImageView fitHeight="32.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons8-male-user-filled-50.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+         </children>
+      </Pane>
+      <AnchorPane fx:id="changepane" layoutY="94.0" prefHeight="623.0" prefWidth="1262.0" />
+   </children>
+</AnchorPane>
