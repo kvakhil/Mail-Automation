@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="623.0" prefWidth="1196.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tabstrial.FXMLDocumentController">
+   <children>
+      <TabPane prefHeight="720.0" prefWidth="835.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <tabs>
+            <Tab text="Programs">
+              <content>
+                <fx:include source="Regulations.fxml" />
+              </content>
+            </Tab>
+          <Tab fx:id="db" text="Regulations">
+            <content>
+                <fx:include source="Database.fxml" />
+            </content>
+          </Tab>
+          <Tab fx:id="send" text="Send Mails">
+            <content>
+                <fx:include source="SendMails.fxml" />
+            </content>
+          </Tab>
+          <Tab fx:id="view" text="Question Paper Mails">
+            <content>
+                <fx:include source="ViewMails.fxml" />
+            </content>
+          </Tab>
+            <Tab fx:id="sendLab" text="Lab Exam Mails">
+               <content>
+                  <fx:include source="labMails.fxml" />
+               </content>
+            </Tab>
+        </tabs>
+        
+      </TabPane>
+   </children>
+</AnchorPane>

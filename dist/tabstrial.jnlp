@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="tabstrial.jnlp">
+  <information>
+    <title>tabstrial</title>
+    <vendor>LulzSec</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="lib\activation-1.1.1.jar" size="69409" download="eager" />
+    <jar href="lib\activation.jar" size="124332" download="eager" />
+    <jar href="lib\commons-codec-1.11.jar" size="335042" download="eager" />
+    <jar href="lib\commons-codec-1.5.jar" size="73098" download="eager" />
+    <jar href="lib\commons-collections4-4.2.jar" size="752798" download="eager" />
+    <jar href="lib\commons-compress-1.18.jar" size="591748" download="eager" />
+    <jar href="lib\commons-logging-1.2.jar" size="61829" download="eager" />
+    <jar href="lib\commons-math3-3.6.1.jar" size="2213560" download="eager" />
+    <jar href="lib\curvesapi-1.05.jar" size="111927" download="eager" />
+    <jar href="lib\dom4j-1.6.1.jar" size="313898" download="eager" />
+    <jar href="lib\javax.mail-1.4.4.jar" size="495041" download="eager" />
+    <jar href="lib\jaxb-api-2.3.0.jar" size="125632" download="eager" />
+    <jar href="lib\jaxb-core-2.3.0.1.jar" size="254858" download="eager" />
+    <jar href="lib\jaxb-impl-2.3.0.1.jar" size="961128" download="eager" />
+    <jar href="lib\junit-4.12.jar" size="314932" download="eager" />
+    <jar href="lib\log4j-1.2.17.jar" size="489884" download="eager" />
+    <jar href="lib\ooxml-schemas-1.1.jar" size="14841622" download="eager" />
+    <jar href="lib\org.apache.poi.xwpf.converter.core-1.0.6.jar" size="219309" download="eager" />
+    <jar href="lib\org.apache.poi.xwpf.converter.xhtml-1.0.6.jar" size="52401" download="eager" />
+    <jar href="lib\poi-3.10-FINAL.jar" size="1950905" download="eager" />
+    <jar href="lib\poi-4.0.1.jar" size="2718209" download="eager" />
+    <jar href="lib\poi-examples-4.0.1.jar" size="424225" download="eager" />
+    <jar href="lib\poi-excelant-4.0.1.jar" size="31336" download="eager" />
+    <jar href="lib\poi-ooxml-3.10-FINAL.jar" size="1031421" download="eager" />
+    <jar href="lib\poi-ooxml-4.0.1.jar" size="1766188" download="eager" />
+    <jar href="lib\poi-ooxml-schemas-4.0.1.jar" size="7771088" download="eager" />
+    <jar href="lib\poi-scratchpad-4.0.1.jar" size="1383430" download="eager" />
+    <jar href="lib\sqlite-jdbc-3.23.1.jar" size="6733696" download="eager" />
+    <jar href="lib\stax-api-1.0.1.jar" size="26514" download="eager" />
+    <jar href="lib\xml-apis-1.0.b2.jar" size="109318" download="eager" />
+    <jar href="lib\xmlbeans-2.3.0.jar" size="2666695" download="eager" />
+    <jar href="lib\xmlbeans-3.0.2.jar" size="2572733" download="eager" />
+    <jar href="tabstrial.jar" size="215784" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="tabstrial" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="tabstrial.Tabstrial"  name="tabstrial" />
+  <update check="always"/>
+</jnlp>

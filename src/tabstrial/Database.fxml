@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="623.0" prefWidth="1262.0" style="-fx-background-color: #e3e7ed;" stylesheets="@UI1.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tabstrial.DatabaseController">
+   <children>
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <Pane layoutX="-1.0" prefHeight="623.0" prefWidth="461.0" style="-fx-background-color: #6699ff;">
+         <children>
+            <Line endX="191.0" endY="7.0" fill="WHITE" layoutX="183.0" layoutY="135.0" opacity="0.5" startX="-152.0" startY="7.0" stroke="#fff8f8" />
+            <Line endX="108.0" endY="7.0" fill="WHITE" layoutX="205.0" layoutY="512.0" opacity="0.5" startX="-111.0" startY="7.0" stroke="#fff8f8" />
+            <Label layoutX="21.0" layoutY="14.0" opacity="0.84" prefHeight="23.0" prefWidth="173.0" text="REGULATIONS" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="117.0" layoutY="106.0" prefHeight="23.0" prefWidth="173.0" text="Modify Entries" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="RegTF" layoutX="68.0" layoutY="187.0" prefHeight="32.0" prefWidth="299.0" promptText="SUBJECT SHORT NAME" style="-fx-background-radius: 5;" />
+            <TextField fx:id="SubTF" layoutX="68.0" layoutY="232.0" prefHeight="32.0" prefWidth="299.0" promptText="SUBJECT NAME" style="-fx-background-radius: 5;" />
+            <TextField fx:id="CodeTF" layoutX="68.0" layoutY="286.0" prefHeight="32.0" prefWidth="299.0" promptText="SUBJECT CODE" style="-fx-background-radius: 5;" />
+            <TextField fx:id="progTf" layoutX="68.0" layoutY="334.0" prefHeight="32.0" prefWidth="299.0" promptText="PROGRAM NAME" style="-fx-background-radius: 5;" />
+            <Button fx:id="selectFile" alignment="BASELINE_LEFT" layoutX="141.0" layoutY="456.0" mnemonicParsing="false" onAction="#selectedFilePath" prefHeight="35.0" prefWidth="154.0" styleClass="button2" stylesheets="@UI1.css" text="Select File">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+                  <Button fx:id="button" alignment="BASELINE_LEFT" layoutX="8.0" layoutY="560.0" mnemonicParsing="false" onAction="#addRow" prefHeight="35.0" prefWidth="143.0" styleClass="button2" stylesheets="@UI1.css" text="Add ">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="syllabusUpdateButton" alignment="BASELINE_LEFT" layoutX="160.0" layoutY="558.0" mnemonicParsing="false" onAction="#updateRow" prefHeight="35.0" prefWidth="143.0" styleClass="button2" stylesheets="@UI1.css" text="Update ">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <TextField fx:id="ChosenImage" layoutX="68.0" layoutY="387.0" prefHeight="32.0" prefWidth="299.0" promptText="SYLLABUS COPY" style="-fx-background-radius: 5;" />
+            <Button alignment="BASELINE_LEFT" layoutX="314.0" layoutY="558.0" mnemonicParsing="false" onAction="#deleteSubjectButton" prefHeight="35.0" prefWidth="133.0" styleClass="button2" stylesheets="@UI1.css" text="Delete " />
+            <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="262.0" layoutY="456.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icons8-pdf-96.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="32.0" fitWidth="25.0" layoutX="413.0" layoutY="563.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icons8-minus-48.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="32.0" fitWidth="25.0" layoutX="117.0" layoutY="565.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icons8-add-96.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="25.0" fitWidth="32.0" layoutX="278.0" layoutY="563.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icons8-restart-48.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="460.0" layoutY="442.0" prefHeight="181.0" prefWidth="744.0" style="-fx-background-color: #e3e7ed;">
+         <children>
+            <Label alignment="CENTER" layoutX="276.0" layoutY="14.0" prefHeight="23.0" prefWidth="173.0" text="Modify Regulations" textFill="#0c3988">
+               <font>
+                  <Font name="Segoe UI" size="18.0" />
+               </font>
+            </Label>
+            <Line endX="191.0" endY="7.0" fill="WHITE" layoutX="333.0" layoutY="40.0" opacity="0.5" startX="-152.0" startY="7.0" stroke="#0c3988" />
+            <TextField fx:id="RegTextField" layoutX="392.0" layoutY="66.0" prefHeight="32.0" prefWidth="329.0" promptText="REGULATION NAME" style="-fx-background-radius: 5;" />
+            <ComboBox fx:id="RegNameCombo" layoutX="136.0" layoutY="70.0" onAction="#changeTable" prefHeight="25.0" prefWidth="200.0" promptText="Regulation" style="-fx-border-radius: 20;">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </ComboBox>
+            <Button fx:id="RegButton" alignment="BASELINE_LEFT" layoutX="554.0" layoutY="120.0" mnemonicParsing="false" onAction="#addRegulation" prefHeight="35.0" prefWidth="143.0" styleClass="button2" stylesheets="@UI1.css" text="Add Regulation" />
+            <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="666.0" layoutY="125.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icons8-add-96.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="deleteRegButton" alignment="BASELINE_LEFT" layoutX="372.0" layoutY="120.0" mnemonicParsing="false" onAction="#DeleteRegulation" prefHeight="35.0" prefWidth="143.0" styleClass="button2" stylesheets="@UI1.css" text="Delete " />
+            <ImageView fitHeight="32.0" fitWidth="25.0" layoutX="483.0" layoutY="125.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icons8-minus-48.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="443.0" prefHeight="54.0" prefWidth="761.0" />
+      <TableView fx:id="RegTable" layoutX="475.0" layoutY="54.0" onMouseClicked="#deleteSubjectClick" prefHeight="387.0" prefWidth="729.0">
+        <columns>
+          <TableColumn fx:id="RegRow" prefWidth="60.0" text="row" />
+          <TableColumn fx:id="RegReg" prefWidth="122.0" text="Sub Short Name" />
+            <TableColumn fx:id="RegName" prefWidth="179.0" text="Subject Name" />
+            <TableColumn fx:id="RegCode" prefWidth="125.0" text="Subject Code" />
+            <TableColumn fx:id="progCol" prefWidth="114.0" text="Program" />
+            <TableColumn fx:id="fileColumn" minWidth="0.0" prefWidth="128.0" text="File" />
+        </columns>
+         <effect>
+            <DropShadow />
+         </effect>
+      </TableView>
+   </children>
+</AnchorPane>
